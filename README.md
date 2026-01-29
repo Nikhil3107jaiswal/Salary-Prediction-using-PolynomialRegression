@@ -1,4 +1,4 @@
-# Salary Prediction using Regression
+# Salary Prediction using Polynomial Regression
 
 ## 📌 Project Overview
 This project demonstrates how regression techniques can be used to predict employee salaries based on job level.
