@@ -1,68 +1,98 @@
-# Salary Prediction using Polynomial Regression
+# 💰 Salary Prediction using Linear & Polynomial Regression
 
 ## 📌 Project Overview
-This project demonstrates how regression techniques can be used to predict employee salaries based on job level.
-The use case simulates an HR decision for offering a salary to a candidate with Level 6.5.
+This project demonstrates how **machine learning regression techniques** can be used to predict employee salaries based on job seniority levels.  
+It simulates a **real-world HR salary negotiation use case**, where data-driven decisions are required to offer fair and competitive compensation.
+
+The project compares **Linear Regression** and **Polynomial Regression** to identify the best-performing model for non-linear salary trends.
 
 ---
 
-## 📊 Dataset
-**File:** Position_Salaries.csv  
+## 🎯 Business Problem
+The HR team maintains a salary structure based on employee levels.
+
+📍 Scenario:
+- A candidate applies for the role of **Regional Manager**
+- Falls between **Level 6 and Level 7**
+- Assumed level: **6.5**
+- Goal: **Predict the optimal salary to offer**
+
+---
+
+## 📊 Dataset Information
+**Dataset Name:** `Position_Salaries.csv`
 
 **Columns:**
-- Position
-- Level
-- Salary  
+- `Position` – Job role (categorical)
+- `Level` – Seniority level (numerical)
+- `Salary` – Annual salary (target variable)
 
-The dataset represents approximate salaries for different job levels.
-
----
-
-## 🎯 Objective
-To predict the salary for a new employee falling between Level 6 and Level 7 using:
-- Linear Regression
-- Polynomial Regression
+This dataset represents approximate salary ranges for different organizational levels.
 
 ---
 
 ## 🛠️ Tools & Technologies
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Scikit-learn**
+- **Jupyter Notebook**
 
 ---
 
-## 🔍 Models Used
+## 🧠 Machine Learning Approach
 
-### Linear Regression
-- Simple and interpretable
-- Assumes linear relationship
-- Underfits the data
+### 1️⃣ Linear Regression
+- Assumes a linear relationship between level and salary
+- Easy to interpret
+- Results in **underfitting** due to non-linear salary growth
 
-### Polynomial Regression
-- Degree = 4
-- Captures non-linear salary growth
-- Provides better predictions
+### 2️⃣ Polynomial Regression
+- Captures non-linear trends effectively
+- Polynomial degree = **4**
+- Provides a smooth curve that closely fits the data
 
 ---
 
-## 📈 Model Evaluation
-**Metrics Used:**
-- R² Score
-- RMSE  
+## 📈 Model Evaluation Metrics
+To evaluate model performance, the following metrics were used:
 
-Polynomial Regression achieved higher accuracy and lower error.
+- **R² Score** – Measures goodness of fit
+- **RMSE (Root Mean Squared Error)** – Measures prediction error
+
+### 🔍 Results Summary
+| Model | Performance |
+|-----|------------|
+| Linear Regression | Poor fit (Underfitting) |
+| Polynomial Regression | High accuracy & low error |
+
+✅ **Polynomial Regression outperformed Linear Regression significantly**
+
+---
+
+## 💡 Key Insights
+- Salary progression is **non-linear** with respect to job level
+- Linear models fail to capture exponential growth
+- Polynomial Regression provides **realistic and reliable predictions**
+- Model can be used as a **decision-support system for HR teams**
 
 ---
 
 ## 💼 Business Impact
-- Enables fair salary negotiation
-- Eliminates estimation bias
-- Supports data-driven HR decisions
+- Enables **fair and data-driven salary negotiations**
+- Prevents underpaying or overpaying candidates
+- Improves transparency in HR compensation strategies
+- Reduces bias in salary decision-making
 
 ---
 
-## ✅ Conclusion
-Polynomial Regression is the recommended model for predicting salaries in this scenario due to its superior performance and realistic predictions.
+## 🚀 Final Recommendation
+**Polynomial Regression** is the preferred model for predicting employee salaries in this scenario due to:
+- Higher accuracy
+- Better fit
+- Real-world applicability
+
+---
+
+## 📁 Project Structure
